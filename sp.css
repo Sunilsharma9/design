@@ -1,0 +1,937 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500&family=Poppins&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+/* .topbar  */
+.topbar ul{
+    list-style-type: none;
+    display: flex;
+}
+/* left side top bar  */
+.li-1 li{
+    padding: 10px;
+}
+/* right side topbar  */
+.li-2 li{
+    padding: 7px;
+}
+/* all a tag  */
+.topbar ul li a{
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+}
+/* icon  */
+.li-1  li a i {
+    font-size: 15px;
+    color: blue;
+    padding-right: 3px;
+}
+
+.li-2 li  a i{
+    font-size: 15px;
+    background-color: gold;
+    padding: 5px 6px;
+    border: .3px solid black;
+    transition: all 0.8s ease ;
+
+}
+.right-icon .fa-facebook-f{
+    padding: 5px 10px;
+}
+.li-2 i:hover{
+    color: blue;
+    transform: translateY(20px);
+    transform: scale(1.2)
+     translateY(20px);
+    background-color: transparent;
+    box-shadow: 0px 0px 10px 1px gray;
+}
+
+/* .topbar work end  */
+
+/* ===================================================== */
+
+/* header and navbar work start  */
+header{
+    background-color: transparent;
+    transition: all 0.5s ease-out;
+}
+
+/* active sticky-top style  */
+.sticky-top{
+    background-color: #fff;
+    box-shadow: 0px 1px 0px 0px grey;
+    padding: 9px;
+    transition-timing-function: linear;
+    
+
+}
+/* logo  */
+.logo img{
+    width: 70px;
+    height: 60px;
+}
+/* nav  */
+nav{
+    transition: 1s ease;
+}
+nav ul{
+    margin-right: 10%;
+}
+nav ul li a{
+    font-size: 16px;
+    margin-right: 5px;
+    color: #000;
+    text-transform: capitalize;
+}
+/* a tag ::after work  */
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px ;
+    background: blue;
+    display: block;
+    margin: right;
+    transition: 0.9s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+/* button tag after work  */
+nav .btn{
+    font-size: 15px;
+    color: #000;
+    border: .7px solid black;
+    background-color: #fff;
+    position: relative;
+    border-radius: 0px;
+    transition: all 1s ease;
+    overflow: hidden;
+    z-index: 1;
+}
+
+nav .btn:hover{
+    color: #fff;
+    box-shadow: 0px 0px 15px 0px black;
+    border-color: #fff;
+}
+nav .btn::after{
+    content: '';
+    position: absolute;
+    transform: skewY(-50deg);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: -1;
+    transition: all 1s ;
+}
+nav .btn:hover::after{
+    background-color: blue;
+    transform: rotate(360deg);
+}
+
+/* hader work end  */
+
+/* ================================== */
+
+.tamplate{
+    margin-top: 50px;
+}
+/* background img  */
+ #bg{
+    width: 100%;
+    height: 600px;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+
+}
+/* right side picture  */
+.pic-area img{
+    width: 120%;
+    height: 400px;
+}
+/* left side text style  */
+.tamplate .text-area{
+    position: relative;
+    top: 60px;
+}
+/* button  */
+.text-area .btn{
+    width: 170px;
+    font-size: 20px;
+    color: #000;
+    border: .7px solid black;
+    background-color: yellow;
+    position: relative;
+    left: 10%;
+    top: 2%;
+    border-radius: 0px;
+    transition: all 1s ease;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.text-area .btn:hover{
+    color: #fff;
+    background-color: transparent;
+    box-shadow: 0px 0px 15px 0px black;
+    border-color: #fff;
+}
+.text-area .btn::after{
+    content: '';
+    position: absolute;
+    transform: skewY(-50deg);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: -1;
+    transition: all 1s ;
+}
+
+.text-area .btn:hover::after{
+    background-color: blue;
+    transform: rotate(360deg);
+}
+
+.text-area h2{
+    font-size: 45px;
+    text-transform: capitalize;
+    color: #000;
+}
+.text-area p{
+    color: grey;
+}
+
+.text-area span{
+    color: blue;
+    cursor: cell;
+    color-adjust:calc(2);
+}
+/* .tamplate work end  */
+
+/* ========================================== */
+
+/* about class  */
+.about{
+    position: relative;
+    top: 80px;
+}
+/* .about inner text  */
+.about .about-text{
+    padding: 50px;
+}
+/* a tag  */
+.about-text p a{
+    text-decoration: none;
+    color: #000;
+}
+/* about inner img tag  */
+.about-img img{
+    width: 100%;
+    height: 500px;
+}
+/* icon  */
+.about-text p i{
+    background-color: green;
+    border-radius: 50%;
+    color: #fff;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+/* .about work end  */
+
+/* ========================================= */
+
+/* .digital work start  */
+.digital{
+    background-color: rgba(151, 154, 154 , 0.7);
+}
+.digital .container{
+    padding: 70px;
+}
+/* .digital inner .digital-area style  */
+.digital-area{
+    background-color: rgba(151, 154, 154 , 0.1);
+    padding: 20px 0px;
+    transition: all 0.5s ease-out;
+}
+.digital-area:hover{
+    background-color: #fff;
+    box-shadow: 1px 1px 10px 0px gray, 1px -1px 10px 0px gray;
+    z-index: 11;
+}
+/* column class name bg-1 and line no = 169  */
+.dg-1{
+    box-shadow: 1px 1px 10px 0px gray, 1px -1px 10px 0px gray;
+}
+/* button style  */
+.digital-area .btn{
+    color: #000;
+    border: .7px solid black;
+    background-color: rgba(1, 224, 88 , 0.1);
+    position: relative;
+    border-radius: 0px;
+    transition: all 1s ease;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.digital-area .btn:hover{
+    color: #fff;
+    background-color: transparent;
+    box-shadow: 0px 0px 15px 0px black;
+    border-color: #fff;
+}
+.digital-area .btn::after{
+    content: '';
+    position: absolute;
+    transform: skewY(-50deg);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: -1;
+    transition: all 1s ;
+}
+
+.digital-area .btn:hover::after{
+    background-color: blue;
+    transform: rotate(360deg);
+}
+.digital-area h5 a{
+    text-decoration: none;
+    color: #000;
+}
+/* .digital work end  */
+/* ================================================ */
+
+/* .new-style (navbar) work start */
+.new-style{
+    background-color: #fff;
+    margin-top: 50px;
+}
+/* a tag  */
+.new-style ul li a{
+    padding: 30px 28px;
+}
+/* a tag active  */
+.new-style ul .nav-item .active{
+    background-color: aqua;
+    color: red;
+    transform: translateY(-20px);
+}
+/* a tag inner i  */
+.new-style ul li a i{
+    font-size: 30px;
+}
+/* .new-style work end  */
+
+/* ===================================== */
+
+/* .tab-content work start  */
+/* h1  */
+.tab-content h1{
+    margin-top: 30px;
+    font-size: 25px;
+}
+/* img  */
+.tab-content img{
+    padding-top: 50px;
+    height: 300px;
+    width: 80%;
+}
+/* p tag  */
+.tab-content p{
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+/* text inner > p > a tag style */
+.tab-content .text p  a{
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+/* p tag inner i  */
+.tab-content p  i{
+    background-color: green;
+    border-radius: 50%;
+    color: #fff;
+    padding: 3px;
+    margin-right: 10px;
+}
+/* .tab-content work end  */
+
+/* ======================================== */
+
+/* .achievement work start  */
+
+.achievement{
+    background-color: rgba(151, 154, 154 , 0.2);
+    padding: 50px 0;
+    margin-top: 50px;
+}
+/* inner div class name = text  */
+.achievement .text{
+    padding: 50px 30%;
+    text-align: center;
+}
+/* p tag  */
+.text p{
+    color: gray;
+}
+/* inner .card wrok start  */
+.achievement .card{
+    background-color: transparent;
+    /* padding: 10px 5px 25px 5px; */
+    transition:  1s ease;
+}
+/* .card inner .card-data  */
+.card .card-data{
+    margin-left: -15px;
+    padding-top: 30px;
+}
+/* .card inner img work  */
+.achievement .card img{
+    margin-top: 16px;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+}
+/* inner (div) = .option  */
+.achievement .option{
+    display: flex;
+    margin-bottom: 50px;
+}
+/* inner .text-center  */
+.achievement .text-center{
+    border: 1px solid  rgba(151, 154, 154 , 0.2);
+    padding: 25px;
+
+}
+.achievement .card:hover{
+    background-color: azure;
+}
+/* .achievement work end  */
+
+/* =================================== */
+
+/* first slider  */
+.slider-area{
+    padding-top: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+/* inner .s-text work start  */
+.slider-area .s-text{
+    padding: 50px;
+    text-align: center;
+}
+/* inner .item style  */
+.slider .item{
+    transition: all 1.5s ease;
+    overflow: hidden;
+}
+/* item inner a tag  */
+.slider .item a{
+    transition: all 1s ease;
+}
+/* .item > img  */
+.slider .item a img{
+    width: 100%;
+    height: 200px;
+    transition: all 1s ease;
+    /* z-index: -1; */
+}
+.slider .item:hover img{
+    transform: scale(.9);
+    filter: grayscale(20%);
+}
+/* .item > .content style  */
+.slider .item .content{
+    margin-top: 30px;
+}
+/* .content inner p tag  */
+.slider .item p{
+    font-size: 14px;
+    color: gray;
+}
+/* icon name  */
+.slider .item .fa-search-plus{
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    z-index: 11;
+    display: none;
+    cursor: pointer;
+}
+/* hover syle  */
+.slider .item:hover .fa-search-plus{
+    display: block;
+}
+.slider .item:hover a::before{
+    content: '';
+    width: 100%;
+    height:55%;
+    background: darkslateblue;
+    position: absolute;
+    z-index: 10;
+    opacity: 0.9;
+
+}
+.slider .item:hover h5{
+    color: blue;
+}
+.slider .item .content span{
+    background-color: blue;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top:62%;
+    right: 40px;
+    padding: 0px 15px;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.slider .item:hover span{
+
+    opacity: 1;
+    transform:  translate(34px);
+}
+
+/* first slider work end  */
+
+/* ============================================ */
+
+/* second slider work  */
+
+.customer-area{
+    margin: 50px 0;
+    background-color: rgba(151, 154, 154 , 0.2);
+    padding: 70px 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* .customer-area inner .SE class  */
+.customer-area .SE{
+    padding: 26px;
+}
+/* .SE inner .item  */
+.SE .item{
+    background-color: #fff;
+    /* width: 30px; */
+    padding: 20px 0 10px 10px; 
+}
+/* .item inner .star-reating  */
+.star-reating{
+    font-size: 15px;
+}
+/* .item inner .devloper  */
+.devloper{
+    padding: 30px 0 10px;
+}
+/* .devloper inner img  */
+.devloper .row img{
+    width: 0px;
+    height: 50px;
+    border-radius: 50%;
+}
+/* .devloper inner h6 tag */
+.devloper h6{
+    font-size: 16px;
+}
+/* .devloper inner p tag  */
+.devloper p{
+    margin-left: -20px;
+}
+/* .item .active style  */
+.id .active{
+    background-color: brown;
+}
+/* button style */
+.customer-area .btn{
+    font-size: 15px;
+    color: #000;
+    border: .7px solid black;
+    background-color: #fff;
+    position: relative;
+    /* left: 15%; */
+    border-radius: 0px;
+    transition: all 1s ease;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.customer-area .btn:hover{
+    color: #fff;
+    box-shadow: 0px 0px 15px 0px black;
+    border-color: #fff;
+}
+.customer-area .btn::after{
+    content: '';
+    position: absolute;
+    transform: skewY(-50deg);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: -1;
+    transition: all 1s ;
+}
+.customer-area .btn:hover::after{
+    background-color: blue;
+    transform: rotate(360deg);
+}
+
+/* second slider work end  */
+
+/* ======================================= */
+
+/* .box-1 work start  */
+/* inner .card  */
+.box-1 .card{
+    padding: 5px 10px 10px;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px gray;
+    height: 280px;
+}
+/* img */
+.box-1 img{
+    width: 100%;
+    height: 150px;
+}
+/* inner p tag  */
+.box-1 p{
+    font-size: 13px;
+}
+/* inner h5 tag  */
+.box-1 h5{
+    font-size: 17px;
+}
+
+/* .box-1 work  end  */
+
+/* ================================= */
+
+/* footer  */
+.footer{
+    width: 100%;
+    margin-top: 70px;
+    background: linear-gradient(to right ,rgba(153, 40, 40, 0.5 ), rgba(12, 22, 148 , 0.5), rgba(23, 32, 42 ,0.9) ), url(image/reading-time.svg);
+    /* background:url(image/reading-time.svg); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+/* footer inner .container  */
+.footer .container{
+    padding: 70px 0;
+    width: 100%;
+}
+ /* footer logo  */
+.footer .f-logo img{
+    background-color: aqua;
+    border-radius: 30px;
+}
+/* footer inner all button style  */
+.footer .btn{
+    font-size: 15px;
+    color: #000;
+    border: .7px solid black;
+    background-color: #fff;
+    position: relative;
+    border-radius: 0px;
+    transition: all 1s ease;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.footer .btn:hover{
+    color: #fff;
+    box-shadow: 0px 0px 15px 0px black;
+    border-color: #fff;
+}
+.footer .btn::after{
+    content: '';
+    position: absolute;
+    transform: skewY(-50deg);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: -1;
+    transition: all 1s ;
+}
+.footer .btn:hover::after{
+    background-color: blue;
+    transform: rotate(360deg);
+}
+/* .footer-link > ul tag  */
+.footer-link ul{
+    list-style-type: none;
+}
+/* li  */
+.footer-link ul li {
+    padding: 5px 0;
+}
+/* a tag  */
+.footer .footer-link a{
+    text-decoration:none;
+    color: #000;
+    transition: 0.5s ;
+}
+/* .footer-link hover style  */
+.footer-link  a:hover{
+    color: darkred;
+    text-shadow: 2px 2px 5px #fff;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+/* a tag ::after work  */
+.footer-link a::after{
+    content: '';
+    width: 0%;
+    height: 2px ;
+    background: darkred;
+    display: inline-block;
+    margin: right;
+    transition: 0.9s;
+}
+
+.footer-link a:hover::after{
+    width: 10%;
+}
+
+
+
+/* all most work end / and responshive work start  */
+
+
+/* =================================================================== */
+
+/* ========================================================= */
+
+                /* media work start  */
+
+
+        /* style 1200px  */
+@media (max-width:1200px){
+    /* top css line no 151 check out */
+    .pic-area img{
+        width: 100%;
+        height: 400px;
+    }
+}
+
+    /* style 992px  */
+@media (max-width:992px){
+    /* nav  ul  */
+    nav ul{
+        margin-right: 3%;
+    }
+    /* nav a tag  */
+    nav ul li a{
+        margin: 3px;
+    }
+    /* background iamge  */
+    #bg{
+        height: 530px;
+    }
+    .pic-area img{
+        width: 90%;
+        height: 300px;
+    }
+    /* .tamplate === line no 155 css top  */
+    .text-area h2{
+        font-size: 35px;
+        text-transform: capitalize;
+        color: #000;
+    }
+    /* ============================== */
+    .about .about-text{
+        padding: 10px;
+    }
+    .about-text h1{
+        font-size: 30px;
+    }
+
+    .about-img img{
+        width: 100%;
+        height: 470px;
+    }
+
+    /* ================================== */
+    .achievement .text{
+        padding: 50px 0%;
+        text-align: center;
+    }
+
+    .card .card-data{
+        margin-left: 0px;
+        padding-top: 20px;
+    }
+    /* ======================================== */
+    .achievement .option{
+        display:flex;
+        column-count: 3;
+        flex-wrap: wrap;
+    }
+    .achievement .text-center{
+        border: 1px solid  rgba(151, 154, 154 , 0.2);
+        padding: 30px;
+    
+    }
+    
+}
+
+/* =========================================================================== */
+
+                /* 768 style  */
+
+@media (max-width:768px){
+    /* .topbar */
+    .topbar .li-2{
+        display: none;
+    }
+    nav ul{
+        text-align: center;
+    }
+    nav ul li a::after{
+        margin: auto;
+    }
+    nav .btn{
+        margin-left: 20%;
+        width: 50%;
+    }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    .pic-area img{
+        margin-left: 30px;
+        width: 90%;
+        height: 300px;
+    }
+    .tamplate .text-area{
+        position: relative;
+        top: 20px;
+    }
+    .text-area h2{
+        font-size: 24px;
+    }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    #bg{
+        height: 480px;
+    }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.achievement .card{
+    margin: 10px 0;
+}
+    .achievement .option{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .achievement .text-center{
+        border: 1px solid  rgba(151, 154, 154 , 0.2);
+        padding: 30px 70px;
+        margin: 20px;
+    }
+    /* ======================= */
+    .owl-carousel .item:hover a::before{
+        height:60%;
+    
+    }
+    /* ============================== */
+    .box-1 .card{
+        margin: 20px 0;
+    }
+    
+}
+
+/* =============================================================== */
+        /* 557px style  */
+@media (max-width:557px){
+    .sticky-top{
+        padding: 1px ;
+    }
+    .logo img{
+        width: 50px;
+        height: 50px;
+    }
+    .topbar{
+        display: none;
+    }
+    .tamplate{
+        margin-top: 30px;
+    }
+    .tamplate .text-area{
+        position: relative;
+        top: 0px;
+    }
+    .text-area h2{
+        font-size: 18px;
+    }
+    .pic-area img{
+        margin-left: 0px;
+        width: 100%;
+        height: 250px;
+    }
+    #bg{
+        height: 400px;
+    }
+    .text-area .btn{
+        font-size: 15px;
+        width: 120px;
+    }
+    .about-text h1{
+        font-size: 22px;
+        color: blue;
+        font-weight: bold;
+    }
+    .about-text p{
+        font-size: 15px;
+    }
+    .about-text p i {
+        padding: 2px;
+    }
+    .tab-content img{
+        padding-top: 30px;
+        height: 300px;
+        width: 100%;
+    }
+    /* ======================== */
+    .achievement .option{
+        justify-content: center;
+        display:flex;
+        flex-wrap: wrap;
+    }
+    /* ============================== */
+
+    .footer .container{
+        padding: 20px;
+    }
+
+    
+    
+}
+
+
+/* ===================================================== */
+                /* work end by  */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
